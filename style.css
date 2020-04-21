@@ -1,0 +1,91 @@
+.container{
+  max-width:600px;
+  font-family: 'Comic Neue', cursive;
+  background:lightyellow;
+  margin-left:auto;
+  margin-right:auto;
+  padding:5px;
+}
+.iconBox{
+   border:solid thin #cfcfcf;
+  width:180px;
+    background-color:lightblue;
+  color:white;
+  padding-top:20px;
+  text-align:center;
+  padding-bottom:30px;
+ box-shadow: 0px 0px 5px grey;
+ display:inline-block;
+  margin-bottom:20px;
+  
+}
+.cardHolder{
+  display:flex;
+  /*flex-direction:column; row-reverse*
+  flax-wrap:wrap;
+  flex-grow:1;*/
+  justify-content:space-between;
+  align-items:center;
+}
+.newsLetterBox{
+    color:;
+    border:solid thin #cfcfcf;
+  border-radius:5px;
+padding:10px;
+  position:relative;
+  font-size:20px;
+}
+.newsLetterBox h3{
+  margin-top:0px;
+  color:lightgreen;
+  font-size:30px
+}
+#second{
+  color:lightblue;
+ 
+}
+#email{
+  display:block;
+  width:100%;
+  height:30px;
+  border-radius:5px;
+    border:solid thin #cfcfcf;
+  box-sizing:border-box;
+  margin-bottom:5px;
+  padding:3px;
+}
+button{
+  display:block;
+  width:100%;
+  color:white;
+  background-color:lightgreen;
+  border:solid thin #cfcfcf;
+   height:30px;
+  box-sizing:border-box;
+  margin-bottom:10px;
+  
+}
+#terms{
+  position:relative;/*absolute*/
+  top:2px;
+  left:0px;
+  margin:5px;
+}
+.closeX{
+  position:absolute; /*newsletterbox is the relative!*/
+  top:5px;
+  right:5px;
+}
+.questionCircle{
+  color:white;
+  border-radius:50%;
+  font-size:70px;
+  width:100px;
+  height:100px;
+  background:lightgreen;
+  text-align:center;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  font-weight:bold;
+  }
