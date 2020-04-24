@@ -31,4 +31,23 @@ $('.button2').click(() => {
         $('.button5').css('background-color', inputValue);   
       })
      
-    
+      var i = 0;
+      $('.button6').on('click', () => {
+        i++
+         counterValue = $('.counterValue').text(i);
+           });
+
+      $('.button3').on('click', () => {
+             i--
+              counterValue = $('.counterValue').text(i);
+                });
+
+                $('.button7').click(() => {
+                  let todoInput = $('.todoInput').val();
+                  console.log(todoInput);
+                  $('ul').append(`<li>${todoInput}</li>`).on('click','li',function(){
+                    $('li').css('text-decoration', 'line-through'); 
+                  }); 
+                   
+                });
+            
