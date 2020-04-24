@@ -15,3 +15,20 @@ $('.button2').click(() => {
     $('h2').text("Is it better now?");
 
   })
+
+  $('.button4').click(() => {
+    let inputValue = $('input').val();
+    let backgroundColor4 = $('.button4').css('background-color');
+    $('.button4').css('background-color', inputValue);  })
+
+
+    
+      $('.button5').one( 'click', function() {
+             
+ 
+        let inputValue = $('input').val();
+        let backgroundColor4 = $('.button5').css('background-color');
+        $('.button5').css('background-color', inputValue);   
+      })
+     
+    
