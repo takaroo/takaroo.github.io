@@ -31,21 +31,63 @@ main {
     background-repeat: no-repeat;
 
 }
+.gray-container{
+    height:20%;
+    width:100%;
+    position: absolute;
+   /*border: solid 1px red;*/
+    left:0;
+    right:0;
+    bottom:0;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-content: center;
+    padding:5px;
+  background: rgba(252, 250, 250, 0.55);
+  /*filter: blur(8px); HAHA */
+  font-family: 'Raleway', sans-serif;
+  font-family: 'Pacifico', cursive;
+      color:#3b3935;
+    
+}
+#currentPhotoTitel{
+    padding:5px;
+    height:50%;
+    width:100%;
+    margin:0;
+}
+#currentPhotoDescription{
+    padding:5px;
+    height:50%;
+    width:100%;
+    margin:0;
+
+}
 .arrow{
-    background: url(img/arrow.svg);
     height:25px;;
     width:auto;
     position: absolute;
     display: block;
+    padding:2px;
+    filter: blur(1px);
+    border-radius: 10px;
+    border: solid 1px grey;
+
    }
    .one{
+    background: url(img/arrow.svg);
+    background-color:white;
     top:50%;
     left:1%;
    }
 .two{
+    background: url(img/arrow.svg);
+    background-color:white;
     transform: rotate(0.5turn);
     top:50%;
     right:1%;
+    
 }
 .thumbnailsBox{
     width:100%;

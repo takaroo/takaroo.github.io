@@ -4,17 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="myfinalprojectstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,700;0,800;1,100;1,200&display=swap" rel="stylesheet">
     <title>Picture Viewer</title>
 </head>
 <body>
 <main>
 <div class="pictureBox">
     <!--<img src="img/1.jpg" class="mainImg">-->
-        <img src="arrow.svg" class="arrow one">
-        <img src="arrow.svg" class="arrow two">
+    <div class="gray-container">
+        <h1 id="currentPhotoTitel"></h1>
+        <p id="currentPhotoDescription"></p>
     </div>
-    <div class="pictureText">
-    </div>
+    <img src="arrow.svg" class="arrow one">
+    <img src="arrow.svg" class="arrow two">
+</div>
+  
 </div>
 
     <div class="thumbnailsBox">
@@ -25,5 +29,26 @@
 
     <script src="https://code.jquery.com/jquery-3.5.0.min.js"></script>
     <script src="myfinalprojectscript.js"></script>
+    <!--/*
+ $(document).ready(function() {
+
+let data = {
+    photo: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg',];
+    title: ['My Title 1', 'My Title 2', 'My Title 3', 'My Title 4', 'My Title 5',];
+    description: ['What happened here, why is this a very nice image', 'Curabitur eget lacus pharetra, efficitur dui ac, hendrerit nisi. Pellentesque finib', 'um lacinia. Nam finibus justo in nisl consequat, eu aliquam nisi accumsan. Nam a cursus felis, vel blandit lectus. Quisque non dui vel ma', 'ue. Vestibulum vitae ligula vitae lacus mattis porta at ut velit. Pellentesque sagittis, dui a placerat ullamcorper, augue ex tincidunt leo, ac', 'si. Pellentesque finibus interdum lacinia. Nam finibus justo in nisl consequat, eu aliquam nisi accumsan. Nam a cursus felis, vel blandit lect',];
+  };
+
+  for(var i = 1; i <= 5; i++) {
+        $('#photo').attr('src', data.photo);
+        i++
+    };
+
+  var currentPhoto =0;
+  let imagesData = [...];
+$('#photo').attr('src', imagesData[currentPhoto].photo);
+
+ 
+  
+ });*/-->
 </body>
 </html>
