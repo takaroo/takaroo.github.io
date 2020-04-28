@@ -4,7 +4,7 @@ $(document).ready(function() {
     let data = {
             photo: ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg',],
             title: ['My Title 1', 'My Title 2', 'My Title 3', 'My Title 4', 'My Title 5',],
-            description: ['What happened here, why is this a very nice image', 'Curabitur eget lacus pharetra, efficitur dui ac, hendrerit nisi. Pellentesque finib', 'um lacinia. Nam finibus justo in nisl consequat, eu aliquam nisi accumsan. Nam a cursus felis, vel blandit lectus. Quisque non dui vel ma', 'ue. Vestibulum vitae ligula vitae lacus mattis porta at ut velit. Pellentesque sagittis, dui a placerat ullamcorper, augue ex tincidunt leo, ac', 'si. Pellentesque finibus interdum lacinia. Nam finibus justo in nisl consequat, eu aliquam nisi accumsan. Nam a cursus felis, vel blandit lect',]
+            description: ['What happened here, why is this a very nice image', 'Curabitur eget lacus pharetra, efficitur dui ac, hendrerit nisi. Pellentesque finib', 'um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus um lacinia. Nam finibus justo in nisl consequat, eu aliquam nisi accumsan. Nam a cursus felis, vel blandit lectus. Quisque non dui vel ma', 'ue. Vestibulum vitae ligula vitae lacus mattis porta at ut velit. Pellentesque sagittis, dui a placerat ullamcorper, augue ex tincidunt leo, ac', 'si. Pellentesque finibus interdum lacinia. Nam finibus justo in nisl consequat, eu aliquam nisi accumsan. Nam a cursus felis, vel blandit lect',]
       };
 
     var currentPhoto = 0;
@@ -21,27 +21,30 @@ $(document).ready(function() {
     }
         loadPhoto(currentPhoto);
 
-    for(var i = 2; i <= 5; i++) {
+    for(var i = 1; i <= data.photo.length; i++) {
     $('.thumbnailsBox').append('<div class="thumbnails"><img src="'+i+'.jpg" class="thumbnailimg"></div>');
      }
 
      $('.one').click(() => {
-        currentPhoto--;
-        currentPhotoTitel--;
-        currentPhotoDescription--;
-        
+        if (0 < currentPhoto){
+            currentPhoto--;
+            currentPhotoTitel--;
+            currentPhotoDescription--;
+            loadPhoto(currentPhoto);
+        }
     });
 
-    $('.two').click(() => {
-        currentPhoto++;
-        currentPhotoTitel++;
-        currentPhotoDescription++;
-        loadPhoto(currentPhoto);
+  
 
-        console.log(currentPhoto);
-        
-        
+    $('.two').click(() => { 
+       if (currentPhoto < 4){
+            currentPhoto++;
+            currentPhotoTitel++;
+            currentPhotoDescription++;
+            loadPhoto(currentPhoto);
+        }
     });
+        
 
 
 });
