@@ -20,14 +20,19 @@ $(document).ready(function() {
 
     }
         
+    
 
     for(var i = 1; i <= data.photo.length; i++) {
-        $('.thumbnailsBox').append('<div class="thumbnails"><img src="'+i+'.jpg" class="thumbnailimg"><div class="hiddenThumbnailTitle">fffffff</div></div>');
+        var numberIndex = parseInt(currentPhoto+1);
+
+        $('.thumbnailsBox').append('<div class="thumbnails"><img src="'+i+'.jpg" class="thumbnailimg" id="'+numberIndex+'"><div class="hiddenThumbnailTitle" class="'+numberIndex+'"></div></div>');
         //$('.thumbnails').append(' <div class="hiddenThumbnailTitle"></div>');
         $('.hiddenThumbnailTitle').text(data.title[currentPhotoTitel]);
-        var numberIndex = parseInt(currentPhoto+1);
          $('.thumbnails img[src="'+numberIndex+'.jpg"]').css('border', 'solid 2px white');
          $('.thumbnails img[src="'+numberIndex+'.jpg"]').css('box-shadow', '0 0 50px #fff');
+
+             
+              
 
 }
 
@@ -77,17 +82,17 @@ $(document).ready(function() {
         }
 
         });
+
+
+            $('.thumbnails').hover(function() {
+
+             $('.hiddenThumbnailTitle').fadeIn( 500 );
+                $('.hiddenThumbnailTitle').fadeOut( 500 );
+            
+        
+            
+            });
       
-
-        
-        $('this .thumbnailimg').hover(function() {
-          //  $('.hiddenThumbnailTitle').css('display', 'block');
-
-            $('.hiddenThumbnailTitle').fadeIn( 500 );
-            $('.hiddenThumbnailTitle').fadeOut( 500 );
-          });
-        
-    
         
 
 
