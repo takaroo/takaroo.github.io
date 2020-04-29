@@ -1,6 +1,6 @@
 body {
     background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(160,160,177,1) 0%, rgba(247,251,252,0.022846638655462215) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgb(101, 107, 107) 0%, rgba(247,251,252,0.022846638655462215) 100%);
 }
 main {
     max-width:90%;
@@ -98,8 +98,14 @@ main {
     display: flex;
     justify-content:center;
     align-items:center;
-
+    flex-direction: row;
 }
+@media screen and (max-width: 600px) {
+    .thumbnailsBox {
+      flex-direction: column;
+    }
+  }
+
 .thumbnails{
     height:80%;;
     width:auto;
