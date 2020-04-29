@@ -25,7 +25,7 @@ $(document).ready(function() {
     for(var i = 1; i <= data.photo.length; i++) {
         var numberIndex = parseInt(currentPhoto+1);
 
-        $('.thumbnailsBox').append('<div class="thumbnails"><img src="'+i+'.jpg" class="thumbnailimg" id="'+numberIndex+'"><div class="hiddenThumbnailTitle" class="'+numberIndex+'"></div></div>');
+        $('.thumbnailsBox').append('<div class="thumbnails"><img src="'+i+'.jpg" class="thumbnailimg"><div class="hiddenThumbnailTitle"></div></div>');
         //$('.thumbnails').append(' <div class="hiddenThumbnailTitle"></div>');
         $('.hiddenThumbnailTitle').text(data.title[currentPhotoTitel]);
          $('.thumbnails img[src="'+numberIndex+'.jpg"]').css('border', 'solid 2px white');
