@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MY Exercises</title>
-  <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
 <style>
   header{
   height:120px;
@@ -50,27 +51,71 @@ main{
 .yellow {
     background-color:yellow;
     flex-grow: 3;
+    padding:50px;
+    display:flex;
+align-content: space-around;
+flex-direction: column;
 }
 
 .lime {
     background-color:lime;
    flex-grow: 2;
-}
+   }
+   body{
+    color:#3b3935;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5vw;
+
+
+   }
+   h1{
+     margin-bottom: 50px;
+     color:cyan;
+     text-align: center;
+   }
+   h2{
+     margin:20px;
+   }
+   h3{
+    text-align: right;
+   }
+   span {
+      color: #ffffff;
+      text-align: center;
+      -webkit-animation: glow 1s ease-in-out infinite alternate;
+      -moz-animation: glow 1s ease-in-out infinite alternate;
+      animation: glow 1s ease-in-out infinite alternate;
+      }
+      @-webkit-keyframes glow {
+      from {
+      text-shadow: 0 0 10px #eeeeee, 0 0 20px #fafd3e, 0 0 30px #fafd3e, 0 0 40px #fafd3e, 0 0 50px #fafd3e, 0 0 60px #9554b3, 0 0 70px #9554b3;
+      }
+      to {
+      text-shadow: 0 0 20px #eeeeee, 0 0 30px #fcfbfb, 0 0 40px #f8f4f6, 0 0 50px #fffeff, 0 0 60px #fdf6fa, 0 0 70px #7c797b, 0 0 80px #a0989c;
+      }
+      }
 </style>
 </head>
 <body>
   <header class="purple">
+
     <div class="cyan1"></div>
     <div class="cyan"></div>
    <div class="cyan"></div>
+   <h1>Exercises' Frontpage</h1>
+
 </header>
  <main>
      <div class="yellow">
-      <h1>Welcome to My Exercises' Frontpage!</h1>
-      <h2><a href=""> 04 / 22  </a></h2>
-      <h2> 04 / 23  </h2>
-      <h2><a href="0424/04242.html">  04 / 24  </a></h2>
-      <h2><a href="myfinalprojectindex.html" target="_blank">  My Final Project  </a></h2>
+      <h3><a href="http://stayathome.greenfox.academy/april-13/" target="_blank">GreenFox Syllabus</a></h3>
+      <h2><a href="https://codepen.io/dashboard/" target="_blank">My CodePen </a></h2>
+      <h2>Some Exercises:</h2>
+      <ul>
+      <li><a href="0422.html"  target="_blank"> CSS Exercise  </a></li>
+      <li><a href="0423index.html"  target="_blank">  JavaScript / JQuery Exercise 1  </a></li>
+      <li><a href="0424/04242.html"  target="_blank">  JavaScript / JQuery Exercises  2 </a></li>
+    </ul>
+      <h2><span><a href="myfinalprojectindex.html" target="_blank">  My Final Project  </a></span></h2>
      </div>
      <div class="lime"></div>
  </main>
