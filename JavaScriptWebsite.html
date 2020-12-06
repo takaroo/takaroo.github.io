@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="JavaScriptWebsitejs.js"></script>
+        <style>
+            #main{
+                width:60%;
+                height:25vw;
+                padding:2vw;
+                background-color:lightsalmon;
+            }
+            button{
+                padding:5px;
+                margin:10px;
+                display:block;
+                position:relative;
+                top:4vw;
+                font-size:20px;
+            }
+            .container{
+                background-color:lightyellow;
+                height:10vw;
+                padding:1vw;
+                width:40%;
+                float:left;
+                display:inline-block;
+                margin:1vw;
+                top:4vw;
+                position:relative;
+            }
+            #gep{
+                background-color:lightgrey;
+            }
+ 
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <h2 id="eredmeny"></h2>
+            <button onClick="Kopapirollo()" id="buton1">Kő-papír-olló indítása</button>
+            
+            <div class="container" id="te"></div>
+            <div class="container" id="gep"></div>
+            <br>
+            <button onClick="location.reload();" id="ujjatek">Reset</button>
+            
+        </div>
+    </body>
+</html>
